@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     # Handle a successful save (go to user's page)
     if @user.save
       # flash success to user
-      flash[:success] = "Welcome to the Scheduler App"
+      flash[:success] = "Would you like beer?"
       redirect_to @user
     else
       render 'new'
